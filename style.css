@@ -87,3 +87,62 @@ body{
 a {
   text-decoration: none;
 }
+.version {
+  position: relative; /* Make the "version" paragraph positionable */
+  margin-top: 450px;
+  font-size: 16px;
+  margin-left: 97%;
+}
+
+.version .new-chatbot-button {
+  position: absolute;  /* Make the button positioned within the paragraph */
+  top: -400px;           /* Move the button significantly up (adjust as needed) */
+  right: 0;             /* Align the button to the right side of the paragraph */
+  border-radius: 50%;   /* Keep the button round */
+  padding: 10px 20px;   /* Adjust padding as needed */
+  background: linear-gradient(to right, #4CAF50, #00bcd4); /* Gradient colors */
+  color: white;          /* Text color for contrast */
+  border: none;          /* Remove default border */
+  /* Optional: Add a subtle shadow for depth */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out; /* Add smooth transition on hover */
+}
+
+.version .new-chatbot-button:hover {
+  /* Change button styles on hover */
+  background: linear-gradient(to right, #ff9800, #f44336); /* Different gradient for hover */
+  transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+.version .new-chatbot-button .icon {
+  /* Style the icon (replace with your icon class or image) */
+  margin-left: 5px;
+  font-size: 16px;
+}
+
+.popup-message {
+  /* Style the popup message */
+  display: none;
+  position: absolute;
+  top: calc(100% + 5px); /* Position below the button */
+  right: 0;
+  padding: 10px 15px;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  z-index: 1; /* Ensure popup is above other elements */
+}
+
+.version .new-chatbot-button:hover .popup-message {
+  /* Show popup message on hover */
+  display: block;
+}
+.imp{
+  color: blueviolet;
+}
+.version .new-chatbot-button a {
+  text-decoration: none;
+  color: inherit; /* Inherit button text color */
+}
